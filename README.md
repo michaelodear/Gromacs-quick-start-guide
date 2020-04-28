@@ -251,3 +251,5 @@ That's the same command used for moving files. It just happens to also be the be
 `python3 comp_ss.py`
 
 This script is designed to analyse the average secondary structure of a modifed residue in a polymer, and compare that to the wild-type form of the protein. It includes the 5 closest residues to either side to give a better sense of the trends in the chosen protein region. It will prompt you for five things - which residue you want to look at, how many chains are in your protein, which file you want to test, which one you want to compare it to, and what you want to call your output file. For this tutorial, enter the number of the residue you modifed, 1, summary_mod.xvg, summary_WT.xvg and comp.xvg respectively. The plot produced when viewed in xmgrace should look something like this:
+
+![Temporary Image](https://user-images.githubusercontent.com/47711697/80465810-02db4d80-897f-11ea-9365-c0c88de0a8be.png)

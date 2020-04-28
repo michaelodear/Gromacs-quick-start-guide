@@ -5,6 +5,7 @@ import numpy
 # Ask for residue of interest
 
 res = int(input("What residue do you want to look at?: "))
+chains = int(input("How many chains does your protein have: "))
 
 test = input("Name of test file: ")
 control = input("Name of control to compare against: ")
@@ -38,7 +39,7 @@ difference = []
 for x, y in zip(WT_structures, compound_structures):
     diff = []
     for m,n in zip(x,y):
-        diff.append((n-m)/14)
+        diff.append((n-m)/chains)
     difference.append(diff)
 
 a = open(output, 'w+')
